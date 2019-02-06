@@ -1,0 +1,140 @@
+
+<html>
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+   </head>
+   <body style="font-weight: bold; color: darkslategray">
+      <form method="post" action="">
+          <fieldset>
+              <h1 style="color: darkslateblue" class="text-center">Application Form</h1>
+
+              <!--Title-->
+
+              <div class="form-group col-10">
+                  <label for="title">Title</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter Title" name="Title">
+              </div>
+
+              <!--Name-->
+
+              <div class="form-group col-10">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Name" name="Name">
+              </div>
+
+              <!--Other Names-->
+
+              <div class="form-group col-10">
+                  <label for="other_names">Other Names</label>
+                  <input type="text" class="form-control" id="other_names" placeholder=" Enter Other Names" name="Other Names">
+              </div>
+
+              <!--Gender-->
+
+              <div class="form-group row col-10">
+                  <label style="margin-left: 15px; margin-right: 10px" for="gender">Gender:</label>
+                  <div id="gender">
+                      <div class="form-check form-check-inline">
+                          <label class="form-check-label" for="checkbox_male">Male</label>
+                          <input class="form-check-input" type="radio" id="checkbox_male" name="Gender" value="Male">
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <label class="form-check-label" for="checkbox_female">Female</label>
+                          <input class="form-check-input" type="radio" id="checkbox_female" name="Gender" value="Female">
+                      </div>
+                  </div>
+              </div>
+
+              <!--Occupation-->
+
+              <div class="form-group col-10">
+                  <label for="occupation">Occupation</label>
+                  <input type="text" class="form-control" id="occupation" placeholder="Enter Occupation" name="Occupation">
+              </div>
+
+              <!--Highest Qualification-->
+
+              <div class="form-group col-10">
+                  <label for="highest_qualification">Highest Qualification</label>
+                  <input type="text" class="form-control" id="highest_qualification" placeholder="Enter Highest Qualification" name="Highest Qualification">
+              </div>
+
+              <!--Place of Work-->
+
+              <div class="form-group col-10">
+                  <label for="place_of_work">Place of Work (If self employed)</label>
+                  <input type="text" class="form-control" id="place_of_work" placeholder="Enter Place of Work" name="Place of Work">
+              </div>
+
+              <!--Job Title-->
+
+              <div class="form-group col-10">
+                  <label for="job_title">Job Title</label>
+                  <input type="text" class="form-control" id="job_title" placeholder="Enter Job Title" name="Job Title">
+              </div>
+
+              <!--Social Media Handle-->
+
+              <div class="form-group col-10">
+                  <label for="social_media_handle">Social Media Handle (Twitter, Facebook, Instagram):</label>
+                  <input type="text" class="form-control" id="social_media_handle" placeholder="Enter Social Media Handle" name="Social Media Handle">
+              </div>
+
+              <!--E-mail-->
+
+              <div class="form-group col-10">
+                  <label for="email">E-mail</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter E-mail" name="E-mail">
+              </div>
+
+              <!--Alternate E-mail-->
+
+              <div class="form-group col-10">
+                  <label for="alternate_email">Alternate E-mail</label>
+                  <input type="email" class="form-control" id="alternate_email" placeholder="Enter Alternate E-mail" name="Alternate E-mail">
+              </div>
+
+              <!--Phone Number-->
+
+              <div class="form-group col-10">
+                  <label for="number">Phone Number</label>
+                  <input type="number" class="form-control" id="number" placeholder="Enter Phone Number" name="Phone Number">
+              </div>
+
+              <!--Contact Address-->
+
+              <div class="form-group col-10">
+                  <label for="contact_address">Contact Address</label>
+                  <input type="text" class="form-control" id="contact_address" placeholder="Enter Contact Address" name="Contact Address">
+              </div>
+
+              <!--Why Are You Applying?-->
+
+              <div class="form-group col-10">
+                  <label for="why_applying">Why Are You Applying? (50 words)</label>
+                  <textarea class="form-control" id="why_applying" rows="3" name="Why Are You Applying"></textarea>
+              </div>
+
+              <!--What do you hope to gain?-->
+
+              <div class="form-group col-10">
+                  <label for="what_gain">What do you hope to gain? (50 words)</label>
+                  <textarea class="form-control" id="what_gain" rows="3" name="What do you hope to gain"></textarea>
+              </div>
+              <div align="center"><button type="submit" class="btn btn-lg btn-primary">Submit</button></div>
+
+          </fieldset>
+
+      </form>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+   </body>
+</html>
