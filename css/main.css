@@ -1,3 +1,16 @@
+.jumbotron{
+	text-align: center;
+  background-color:ebdef0  !important;
+
+  //*.jumbotron { *//
+
+    margin-bottom: 0px;
+    background-image: url(../img/backgroud.JPG);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #0E4D92 ;
+
 body {
 	font-size: 15px;
 	line-height: 1.42857143;
@@ -5,23 +18,45 @@ body {
 	background-color: #fff;
 	font-family: 'PT Sans', sans-serif;
 	font-weight: bolder;
+
+ body {
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #323232;
+    background-color: #fff;
+    font-family: 'PT Sans', sans-serif;
+     font-weight: bolder;
+     ::placeholder {
+  color: peachpuff;
+  font-size: 13px;
 }
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+.jumbotron1.id{
 }
-.card-title{
-	font-weight: bolder;
-	color: #15416e;
+
+footer{
+
+  background: #F8F9FA;
 }
-.card-text{
-	font-weight: bolder;
+.footer-content{
+  padding:20px;
 }
-.card-text a{
-	font-size: 12px;
+.footer-content a{
+  color:#85144B;
 }
-.card-deck {
-	padding: 10px;
-	margin-top: 20px;
-}
+
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    background:linear-gradient(to right, #7451a2 , #ee2e24);
+    color: #fff;
+    padding:1% 0;
+    font-size: 1.1em;
+    border:0;
+    height: 15px;
+  }
+.current:hover{
+    background-color: #61DAFB;
+  }
+
+
+
