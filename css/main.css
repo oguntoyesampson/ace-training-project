@@ -11,10 +11,14 @@
     background-repeat: no-repeat;
     color: #0E4D92 ;
 
-}
-p{
-	text-align:  center;
-}
+body {
+	font-size: 15px;
+	line-height: 1.42857143;
+	color: #323232;
+	background-color: #fff;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bolder;
+
  body {
     font-size: 15px;
     line-height: 1.42857143;
@@ -53,5 +57,6 @@ footer{
 .current:hover{
     background-color: #61DAFB;
   }
+
 
 
