@@ -18,7 +18,7 @@
 
               <!--Title-->
 
-              <div class="form-group col-10">
+              <div class="form-group col-5">
                   <label for="title">Title</label>
                   <select  class="form-control" id="title"  name="Title">Select Title
                     <option>Mr</option>
@@ -124,7 +124,7 @@
 
 
               <!--Current Occupation-->
-              <div class="form-group">
+              <div class="form-group col-5">
                   <label for="occupation">Current Occupation</label>
                   <select class="form-control" id="occupation">
                       <option>Business</option>
@@ -151,17 +151,48 @@
               <!--Why Are You Applying?-->
 
               <div class="form-group col-10">
-                  <label for="why_applying">Why Are You Applying? (50 words)</label>
-                  <textarea class="form-control" id="why_applying" rows="3" name="Why Are You Applying"></textarea>
+                  <label for="why_applying">Why Are You Applying? (Maximum of 50 words)</label>
+                  <textarea class="form-control" id="why_applying" rows="3" name="Why Are You Applying" maxlength="50"></textarea>
+                  <div id="applying_words_left"></div>
               </div>
 
               <!--What do you hope to gain?-->
 
               <div class="form-group col-10">
-                  <label for="what_gain">What do you hope to gain? (50 words)</label>
-                  <textarea class="form-control" id="what_gain" rows="3" name="What do you hope to gain"></textarea>
+                  <label for="what_gain">What do you hope to gain? (Maximum of 50 words)</label>
+                  <textarea class="form-control" id="what_gain" rows="3" name="What do you hope to gain" maxlength="50"></textarea>
+                  <div id="gain_words_left"></div>
               </div>
-              <div align="center"><button type="submit" class="btn btn-lg btn-primary">Submit</button></div>
+
+              <div align="center"><button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#form_submission">Submit</button></div>
+
+              <!--Modal to confirm submission-->
+
+              <div class="modal fade" id="form_submission" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h2 style="color: darkred" class="modal-title" id="exampleModalLongTitle"><b>Confirm Submission</b></h2>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <p style="color: #1565c0">
+                                  Dear Sir/Ma,
+
+                                  We appreciate your interest in indicating to participate in the ACE cybersecurity training workshop. Please confirm that the information provided in the form is accurate before confirming submission
+
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="submit" class="btn btn-primary">Confirm Submission</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
 
           </fieldset>
 
@@ -195,7 +226,27 @@
                       $('#instagram_textfield').css('display', 'none');
                   }
               });
+
+              //For text count in the text area
+
+              $("#why_applying").on('keyup', function() {
+                  let words = this.value.match(/\S+/g).length;
+
+                  if (words > 50) {
+                      // Split the string on first 50 words and rejoin on spaces
+                      let trimmed = $(this).val().split(/\s+/, 50).join(" ");
+                      // Add a space at the end to make sure more typing creates new words
+                      $(this).val(trimmed + " ");
+                  }
+                  else {
+                      // $('#display_count').text(words);
+                      $('#applying_words_left').text(200-words);
+                  }
+              });
           });
+
+
+
       </script>
    </body>
 </html>
