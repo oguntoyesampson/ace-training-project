@@ -89,26 +89,29 @@
               <!--Social Media Handle-->
 
               <div class="form-group col-10">
-                  <label for="social_media_handle">Social Media Handle (Twitter, Facebook, Instagram):</label>
-                  <input type="text" class="form-control" id="social_media_handle" placeholder="Enter Social Media Handle" name="Social Media Handle">
-              </div>
+                  <label for="twitter">Social Media Handle (Twitter, Facebook, Instagram):</label>
               <div class="form-check">
-                  <input class="form-check-input form-control" type="checkbox" value="" id="twitter" name="Twitter">
                   <label class="form-check-label" for="twitter">
                       Twitter
                   </label>
+                  <input class="form-check-input form-control" type="checkbox" value="" id="twitter" name="Twitter">
+                  <input type="text" class="form-control" style="display: none;"  id="twitter_textfield" placeholder="Enter Twitter Handle" name="Social Media Handle">
               </div>
               <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="facebook" name="Facebook">
                   <label class="form-check-label" for="facebook">
                       Facebook
                   </label>
+                  <input class="form-check-input" type="checkbox" value="" id="facebook" name="Facebook">
+                  <input type="text" class="form-control" style="display: none;"  id="facebook_textfield" placeholder="Enter Twitter Handle" name="Social Media Handle">
+
               </div>
               <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="instagram" name="Instagram">
                   <label class="form-check-label" for="instagram">
                       Instagram
                   </label>
+                  <input class="form-check-input" type="checkbox" value="" id="instagram" name="Instagram">
+                  <input type="text" class="form-control" style="display: none;" id="instagram_textfield" placeholder="Enter Twitter Handle" name="Social Media Handle">
+
               </div>
 
               <!--Highest Qualification-->
@@ -165,5 +168,33 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <script>
+          ready(function(){
+              $('#twitter'). click(function() {
+                  if ($(this).prop("checked") == true) {
+                      $('#twitter_textfield').css('display', 'block');
+                  }
+                  else if ($(this).prop("checked") == false) {
+                      $('#twitter_textfield').css('display', 'none');
+                  }
+              });
+              $('#facebook'). click(function() {
+                  if ($(this).prop("checked") == true) {
+                      $('#facebook_textfield').css('display', 'block');
+                  }
+                  else if ($(this).prop("checked") == false) {
+                      $('#facebook_textfield').css('display', 'none');
+                  }
+              });
+              $('#instagram'). click(function() {
+                  if ($(this).prop("checked") == true) {
+                      $('#instagram_textfield').css('display', 'block');
+                  }
+                  else if ($(this).prop("checked") == false) {
+                      $('#instagram_textfield').css('display', 'none');
+                  }
+              });
+          });
+      </script>
    </body>
 </html>
