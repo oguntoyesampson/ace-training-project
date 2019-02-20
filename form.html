@@ -90,28 +90,29 @@
 
               <div class="form-group col-10">
                   <label for="twitter">Social Media Handle (Twitter, Facebook, Instagram):</label>
-              <div class="form-check">
-                  <label class="form-check-label" for="twitter">
-                      Twitter
-                  </label>
-                  <input class="form-check-input form-control" type="checkbox" value="" id="twitter" name="Twitter">
-                  <input type="text" class="form-control" style="display: none;"  id="twitter_textfield" placeholder="Enter Twitter Handle" name="Social Media Handle">
-              </div>
-              <div class="form-check">
-                  <label class="form-check-label" for="facebook">
-                      Facebook
-                  </label>
-                  <input class="form-check-input" type="checkbox" value="" id="facebook" name="Facebook">
-                  <input type="text" class="form-control" style="display: none;"  id="facebook_textfield" placeholder="Enter Twitter Handle" name="Social Media Handle">
+                  <div class="form-check">
+                      <label class="form-check-label" style="margin-right: 25px;" for ="twitter">
+                          Twitter
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="twitter" name="Twitter">
+                      <input type="text" class="form-control" style="display: none;"  id="twitter_textfield" placeholder="Enter Twitter Handle" name="Social Media Handle">
+                  </div>
+                  <div class="form-check">
+                      <label class="form-check-label" style="margin-right: 25px;" for="facebook">
+                          Facebook
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="facebook" name="Facebook">
+                      <input type="text" class="form-control" style="display: none;"  id="facebook_textfield" placeholder="Enter Facebook Name" name="Social Media Handle">
 
-              </div>
-              <div class="form-check">
-                  <label class="form-check-label" for="instagram">
-                      Instagram
-                  </label>
-                  <input class="form-check-input" type="checkbox" value="" id="instagram" name="Instagram">
-                  <input type="text" class="form-control" style="display: none;" id="instagram_textfield" placeholder="Enter Twitter Handle" name="Social Media Handle">
+                  </div>
+                  <div class="form-check" style="margin-bottom: 15px;">
+                      <label class="form-check-label" style="margin-right: 25px;" for="instagram">
+                          Instagram
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="instagram" name="Instagram">
+                      <input type="text" class="form-control" style="display: none;" id="instagram_textfield" placeholder="Enter Instagram Handle" name="Social Media Handle">
 
+                  </div>
               </div>
 
               <!--Highest Qualification-->
@@ -169,28 +170,28 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
       <script>
-          ready(function(){
-              $('#twitter'). click(function() {
-                  if ($(this).prop("checked") == true) {
+          $(document).ready(function(){
+              $('#twitter').click(function() {
+                  if ($(this).prop("checked") === true) {
                       $('#twitter_textfield').css('display', 'block');
                   }
-                  else if ($(this).prop("checked") == false) {
+                  else if ($(this).prop("checked") === false) {
                       $('#twitter_textfield').css('display', 'none');
                   }
               });
               $('#facebook'). click(function() {
-                  if ($(this).prop("checked") == true) {
+                  if ($(this).prop("checked") === true) {
                       $('#facebook_textfield').css('display', 'block');
                   }
-                  else if ($(this).prop("checked") == false) {
+                  else if ($(this).prop("checked") === false) {
                       $('#facebook_textfield').css('display', 'none');
                   }
               });
               $('#instagram'). click(function() {
-                  if ($(this).prop("checked") == true) {
+                  if ($(this).prop("checked") === true) {
                       $('#instagram_textfield').css('display', 'block');
                   }
-                  else if ($(this).prop("checked") == false) {
+                  else if ($(this).prop("checked") === false) {
                       $('#instagram_textfield').css('display', 'none');
                   }
               });
