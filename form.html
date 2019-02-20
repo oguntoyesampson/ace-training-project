@@ -20,7 +20,7 @@
 
               <div class="form-group col-5">
                   <label for="title">Title</label>
-                  <select  class="form-control" id="title"  name="Title">Select Title
+                  <select required="required"  class="form-control" id="title"  name="Title">Select Title
                     <option>Mr</option>
                     <option>Mrs</option>
                     <option>Dr</option>
@@ -32,14 +32,14 @@
 
               <div class="form-group col-10">
                   <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Name" name="Name">
+                  <input required="required" type="text" class="form-control" id="name" placeholder="Name" name="Name">
               </div>
 
               <!--Other Names-->
 
               <div class="form-group col-10">
                   <label for="other_names">Other Names</label>
-                  <input type="text" class="form-control" id="other_names" placeholder=" Enter Other Names" name="Other Names">
+                  <input required="required" type="text" class="form-control" id="other_names" placeholder=" Enter Other Names" name="Other Names">
               </div>
 
               <!--Gender-->
@@ -49,11 +49,11 @@
                   <div id="gender">
                       <div class="form-check form-check-inline">
                           <label class="form-check-label" for="checkbox_male">Male</label>
-                          <input class="form-check-input" type="radio" id="checkbox_male" name="Gender" value="Male">
+                          <input required="required" class="form-check-input" type="radio" id="checkbox_male" name="Gender" value="Male">
                       </div>
                       <div class="form-check form-check-inline">
                           <label class="form-check-label" for="checkbox_female">Female</label>
-                          <input class="form-check-input" type="radio" id="checkbox_female" name="Gender" value="Female">
+                          <input required="required" class="form-check-input" type="radio" id="checkbox_female" name="Gender" value="Female">
                       </div>
                   </div>
               </div>
@@ -62,28 +62,28 @@
 
               <div class="form-group col-10">
                   <label for="number">Phone Number</label>
-                  <input type="tel" class="form-control" id="number" placeholder="Enter Phone Number" name="Phone Number">
+                  <input required="required" type="tel" class="form-control" id="number" placeholder="Enter Phone Number" name="Phone Number">
               </div>
 
               <!--E-mail-->
 
               <div class="form-group col-10">
                   <label for="email">E-mail</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter E-mail" name="E-mail">
+                  <input required="required" type="email" class="form-control" id="email" placeholder="Enter E-mail" name="E-mail">
               </div>
 
               <!--Alternate E-mail-->
 
               <div class="form-group col-10">
                   <label for="alternate_email">Alternate E-mail</label>
-                  <input type="email" class="form-control" id="alternate_email" placeholder="Enter Alternate E-mail" name="Alternate E-mail">
+                  <input required="required" type="email" class="form-control" id="alternate_email" placeholder="Enter Alternate E-mail" name="Alternate E-mail">
               </div>
 
               <!--Contact Address-->
 
               <div class="form-group col-10">
                   <label for="contact_address">Contact Address</label>
-                  <input type="text" class="form-control" id="contact_address" placeholder="Enter Contact Address" name="Contact Address">
+                  <input required="required" type="text" class="form-control" id="contact_address" placeholder="Enter Contact Address" name="Contact Address">
               </div>
 
               <!--Social Media Handle-->
@@ -119,14 +119,14 @@
 
               <div class="form-group col-10">
                   <label for="highest_qualification">Highest Qualification</label>
-                  <input type="text" class="form-control" id="highest_qualification" placeholder="Enter Highest Qualification" name="Highest Qualification">
+                  <input required="required" type="text" class="form-control" id="highest_qualification" placeholder="Enter Highest Qualification" name="Highest Qualification">
               </div>
 
 
               <!--Current Occupation-->
               <div class="form-group col-5">
                   <label for="occupation">Current Occupation</label>
-                  <select class="form-control" id="occupation">
+                  <select required="required" class="form-control" id="occupation">
                       <option>Business</option>
                       <option>Agric</option>
                       <option>Education</option>
@@ -137,21 +137,21 @@
 
               <div class="form-group col-10">
                   <label for="place_of_work">Name and address of employer</label>
-                  <input type="text" class="form-control" id="place_of_work" placeholder="Enter name and address of employer" name="Place of Work">
+                  <input required="required" type="text" class="form-control" id="place_of_work" placeholder="Enter name and address of employer" name="Place of Work">
               </div>
 
               <!--Job Title-->
 
               <div class="form-group col-10">
                   <label for="job_title">Job Title</label>
-                  <input type="text" class="form-control" id="job_title" placeholder="Enter Job Title" name="Job Title">
+                  <input required="required" type="text" class="form-control" id="job_title" placeholder="Enter Job Title" name="Job Title">
               </div>
 
               <!--Computer Skills-->
 
               <div class="form-group col-10">
                   <label for="computer_skills">List all your computer skills (You may be tested in some of them)</label>
-                  <textarea rows="2" class="form-control" id="computer_skills" placeholder="List Computer Skills" name="Computer Skills"></textarea>
+                  <textarea required="required" rows="2" class="form-control" id="computer_skills" placeholder="List Computer Skills" name="Computer Skills"></textarea>
               </div>
 
 
@@ -159,7 +159,7 @@
 
               <div class="form-group col-10">
                   <label for="why_applying">Why Are You Applying? (Maximum of 50 words)</label>
-                  <textarea class="form-control" id="why_applying" rows="3" name="Why Are You Applying"></textarea>
+                  <textarea required="required" class="form-control" id="why_applying" rows="3" name="Why Are You Applying"></textarea>
                   <div id="applying_words_left"></div>
               </div>
 
@@ -167,11 +167,11 @@
 
               <div class="form-group col-10">
                   <label for="what_gain">What do you hope to gain? (Maximum of 50 words)</label>
-                  <textarea class="form-control" id="what_gain" rows="3" name="What do you hope to gain" maxlength="50"></textarea>
+                  <textarea required="required" class="form-control" id="what_gain" rows="3" name="What do you hope to gain" maxlength="50"></textarea>
                   <div id="gain_words_left"></div>
               </div>
-
-              <div align="center"><button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#form_submission">Submit</button></div>
+              <span><a href="index.html"><button type="button" class="btn btn-lg btn-primary">Back</button></a></span>
+              <div align="center"><button type="submit" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#form_submission">Submit</button></div>
 
               <!--Modal to confirm submission-->
 
