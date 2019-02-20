@@ -147,6 +147,13 @@
                   <input type="text" class="form-control" id="job_title" placeholder="Enter Job Title" name="Job Title">
               </div>
 
+              <!--Computer Skills-->
+
+              <div class="form-group col-10">
+                  <label for="computer_skills">List all your computer skills (You may be tested in some of them</label>
+                  <input type="text" class="form-control" id="computer_skills" placeholder="Enter Job Title" name="Job Title">
+              </div>
+
 
               <!--Why Are You Applying?-->
 
@@ -181,7 +188,7 @@
                               <p style="color: #1565c0">
                                   Dear Sir/Ma,
 
-                                  We appreciate your interest in indicating to participate in the ACE cybersecurity training workshop. Please confirm that the information provided in the form is accurate before confirming submission
+                                  We appreciate your interest in indicating to participate in the ACE cybersecurity training workshop. Please confirm that the information provided in the form is accurate and authentic before confirming submission
 
                               </p>
                           </div>
@@ -239,8 +246,24 @@
                       $(this).val(trimmed + " ");
                   }
                   else {
-                      $('#display_count').text(words);
+                      // $('#display_count').text(words);
                       $('#applying_words_left').text(50-words+' Words Left');
+
+                  }
+              });
+              $("#what_gain").on('keyup', function() {
+                  let words = this.value.match(/\S+/g).length;
+
+                  if (words > 50) {
+                      // Split the string on first 50 words and rejoin on spaces
+                      let trimmed = $(this).val().split(/\s+/, 50).join(" ");
+                      // Add a space at the end to make sure more typing creates new words
+                      $(this).val(trimmed + " ");
+                  }
+                  else {
+                      // $('#display_count').text(words);
+                      $('#gain_words_left').text(50-words+' Words Left');
+
                   }
               });
           });
