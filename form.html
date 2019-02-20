@@ -232,16 +232,16 @@
               $("#why_applying").on('keyup', function() {
                   let words = this.value.match(/\S+/g).length;
 
-                  if (words > 50) {
-                      // Split the string on first 50 words and rejoin on spaces
-                      let trimmed = $(this).val().split(/\s+/, 50).join(" ");
-                      // Add a space at the end to make sure more typing creates new words
-                      $(this).val(trimmed + " ");
-                  }
-                  else {
+                  // if (words > 50) {
+                  //     // Split the string on first 50 words and rejoin on spaces
+                  //     let trimmed = $(this).val().split(/\s+/, 50).join(" ");
+                  //     // Add a space at the end to make sure more typing creates new words
+                  //     $(this).val(trimmed + " ");
+                  // }
+                  // else {
                       // $('#display_count').text(words);
                       $('#applying_words_left').text(50-words+' Words Left');
-                  }
+                  // }
               });
           });
 
