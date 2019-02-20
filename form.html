@@ -172,7 +172,14 @@
               </div>
               <div align="center">
                   <span><a href="index.html"><button type="button" class="btn btn-lg btn-primary">Back</button></a></span>
-                  <span><button type="submit" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#form_submission">Submit</button></span>
+                  <span><button id="sub_btn" type="submit" disabled="disabled" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#form_submission">Submit</button></span>
+              </div>
+
+              <!--Finalise Submission-->
+
+              <div class="form-check">
+                  <label class="form-check-label" style="margin-right: 25px; color: red;" for="final_sub"> Please check this box to confirm submission</label>
+                  <div class="form-check-input" id="final_sub"></div>
               </div>
 
               <!--Modal to confirm submission-->
@@ -233,6 +240,14 @@
                   }
                   else if ($(this).prop("checked") === false) {
                       $('#instagram_textfield').css('display', 'none');
+                  }
+              });
+              $('#final_sub'). click(function() {
+                  if ($(this).prop("checked") === true) {
+                      $('#sub_btn').attr('disabled', 'false');
+                  }
+                  else if ($(this).prop("checked") === false) {
+                      $('#sub_btn').attr('disabled', 'true');
                   }
               });
 
