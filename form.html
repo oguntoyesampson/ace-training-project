@@ -244,10 +244,10 @@
               });
               $('#final_sub'). click(function() {
                   if ($(this).prop("checked") === true) {
-                      $('#sub_btn').attr('disabled', 'false');
+                      $('#sub_btn').removeAttr('disabled');
                   }
                   else if ($(this).prop("checked") === false) {
-                      $('#sub_btn').attr('disabled', 'true');
+                      $('#sub_btn').attr('disabled', 'disabled');
                   }
               });
 
