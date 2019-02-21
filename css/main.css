@@ -9,7 +9,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: #0E4D92;
+    line-height:700px;
 }
+.jumbotron > div{
+}
+
 
 body {
 	font-size: 15px;
