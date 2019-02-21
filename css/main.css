@@ -9,6 +9,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: #0E4D92;
+    height: fit-content;
 }
 
 body {
