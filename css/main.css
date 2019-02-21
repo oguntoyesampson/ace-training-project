@@ -1,6 +1,6 @@
 .jumbotron {
     text-align: center;
-    background-color: ebdef0 !important;
+    /*background-color: ebdef0; !important;*/
 
 / /*.jumbotron { */
 / margin-bottom: 0 px;
@@ -9,7 +9,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: #0E4D92;
-    height: fit-content;
 }
 
 body {
