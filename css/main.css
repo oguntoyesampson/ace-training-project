@@ -1,15 +1,15 @@
-.jumbotron{
-	text-align: center;
-  background-color:ebdef0  !important;
+.jumbotron {
+    text-align: center;
+    background-color: ebdef0 !important;
 
-  //*.jumbotron { *//
-
-    margin-bottom: 0px;
+/ /*.jumbotron { */
+/ margin-bottom: 0 px;
     background-image: url(../img/backgroud.JPG);
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #0E4D92 ;
+    color: #0E4D92;
+}
 
 body {
 	font-size: 15px;
