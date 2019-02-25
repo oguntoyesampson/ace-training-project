@@ -1,0 +1,292 @@
+
+<html>
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <title> Application Form</title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+   </head>
+   <body style="font-weight: bold; color: darkslategray">
+      <form method="post" action="">
+          <fieldset>
+              <h1 style="color: darkslateblue" class="text-center">Application Form</h1>
+
+              <!--Title-->
+
+              <div class="form-group col-5">
+                  <label for="title">Title<span style="color: red;">   *Required</span></label>
+                  <select required="required"  class="form-control" id="title"  name="Title">Select Title
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                    <option>Dr</option>
+                    <option>Prof</option>
+                  </select>
+              </div>
+
+              <!--Name-->
+
+              <div class="form-group col-10">
+                  <label for="name">Name<span style="color: red;">   *Required</span></label>
+                  <input required="required" type="text" class="form-control" id="name" placeholder="Name" name="Name">
+              </div>
+
+              <!--Other Names-->
+
+              <div class="form-group col-10">
+                  <label for="other_names">Other Names<span style="color: red;">   *Required</span></label>
+                  <input required="required" type="text" class="form-control" id="other_names" placeholder=" Enter Other Names" name="Other Names">
+              </div>
+
+              <!--Gender-->
+
+              <div class="form-group row col-10">
+                  <label style="margin-left: 15px; margin-right: 10px" for="gender">Gender:<span style="color: red;">   *Required</span></label><br>
+                  <div id="gender">
+                      <div class="form-check form-check-inline">
+                          <label class="form-check-label" for="checkbox_male">Male</label>
+                          <input required="required" class="form-check-input" type="radio" id="checkbox_male" name="Gender" value="Male">
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <label class="form-check-label" for="checkbox_female">Female</label>
+                          <input required="required" class="form-check-input" type="radio" id="checkbox_female" name="Gender" value="Female">
+                      </div>
+                  </div>
+              </div>
+
+              <!--Phone Number-->
+
+              <div class="form-group col-10">
+                  <label for="number">Phone Number<span style="color: red;">   *Required</span></label>
+                  <input required="required" type="tel" class="form-control" id="number" placeholder="Enter Phone Number" name="Phone Number">
+              </div>
+
+              <!--E-mail-->
+
+              <div class="form-group col-10">
+                  <label for="email">E-mail<span style="color: red;">   *Required</span></label>
+                  <input required="required" type="email" class="form-control" id="email" placeholder="Enter E-mail" name="E-mail">
+              </div>
+
+              <!--Alternate E-mail-->
+
+              <div class="form-group col-10">
+                  <label for="alternate_email">Alternate E-mail<span style="color: red;">   *Required</span></label>
+                  <input type="email" class="form-control" id="alternate_email" placeholder="Enter Alternate E-mail" name="Alternate E-mail">
+              </div>
+
+              <!--Contact Address-->
+
+              <div class="form-group col-10">
+                  <label for="contact_address">Contact Address<span style="color: red;">   *Required</span></label>
+                  <input required="required" type="text" class="form-control" id="contact_address" placeholder="Enter Contact Address" name="Contact Address">
+              </div>
+
+              <!--Social Media Handle-->
+
+              <div class="form-group col-10">
+                  <label for="twitter">Social Media Handle (Twitter, Facebook, Instagram):</label>
+                  <div class="form-check">
+                      <label class="form-check-label" style="margin-right: 25px;" for ="twitter">
+                          Twitter
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="twitter" name="Twitter">
+                      <input type="text" class="form-control" style="display: none;"  id="twitter_textfield" placeholder="Enter Twitter Handle" name="Social Media Handle">
+                  </div>
+                  <div class="form-check">
+                      <label class="form-check-label" style="margin-right: 25px;" for="facebook">
+                          Facebook
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="facebook" name="Facebook">
+                      <input type="text" class="form-control" style="display: none;"  id="facebook_textfield" placeholder="Enter Facebook Name" name="Social Media Handle">
+
+                  </div>
+                  <div class="form-check" style="margin-bottom: 15px;">
+                      <label class="form-check-label" style="margin-right: 25px;" for="instagram">
+                          Instagram
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="instagram" name="Instagram">
+                      <input type="text" class="form-control" style="display: none;" id="instagram_textfield" placeholder="Enter Instagram Handle" name="Social Media Handle">
+
+                  </div>
+              </div>
+
+              <!--Highest Qualification-->
+
+              <div class="form-group col-10">
+                  <label for="highest_qualification">Highest Qualification<span style="color: red;">     *Required</span></label>
+                  <input required="required" type="text" class="form-control" id="highest_qualification" placeholder="Enter Highest Qualification" name="Highest Qualification">
+              </div>
+
+
+              <!--Current Occupation-->
+              <div class="form-group col-5">
+                  <label for="occupation">Current Occupation<span style="color: red;">   *Required</span></label>
+                  <select required="required" class="form-control" id="occupation">
+                      <option>Business</option>
+                      <option>Agric</option>
+                      <option>Education</option>
+                  </select>
+              </div>
+
+              <!--Place of Work-->
+
+              <div class="form-group col-10">
+                  <label for="place_of_work">Name and address of employer<span style="color: red;">   *Required</span></label>
+                  <input required="required" type="text" class="form-control" id="place_of_work" placeholder="Enter name and address of employer" name="Place of Work">
+              </div>
+
+              <!--Job Title-->
+
+              <div class="form-group col-10">
+                  <label for="job_title">Job Title<span style="color: red;">   *Required</span></label>
+                  <input required="required" type="text" class="form-control" id="job_title" placeholder="Enter Job Title" name="Job Title">
+              </div>
+
+              <!--Computer Skills-->
+
+              <div class="form-group col-10">
+                  <label for="computer_skills">List all your computer skills (You may be tested in some of them)<span style="color: red;">   *Required</span></label>
+                  <textarea required="required" rows="2" class="form-control" id="computer_skills" placeholder="List Computer Skills" name="Computer Skills"></textarea>
+              </div>
+
+
+              <!--Why Are You Applying?-->
+
+              <div class="form-group col-10">
+                  <label for="why_applying">Why Are You Applying? (Maximum of 50 words)<span style="color: red;">   *Required</span></label>
+                  <textarea required="required" class="form-control" id="why_applying" rows="3" name="Why Are You Applying"></textarea>
+                  <div id="applying_words_left"></div>
+              </div>
+
+              <!--What do you hope to gain?-->
+
+              <div class="form-group col-10">
+                  <label for="what_gain">What do you hope to gain? (Maximum of 50 words)<span style="color: red;">   *Required</span></label>
+                  <textarea required="required" class="form-control" id="what_gain" rows="3" name="What do you hope to gain" maxlength="50"></textarea>
+                  <div id="gain_words_left"></div>
+              </div>
+              <div align="center">
+                  <span><a href="index.html"><button type="button" class="btn btn-lg btn-primary">Back</button></a></span>
+                  <span><button id="sub_btn" type="submit" disabled="disabled" class="btn btn-lg btn-primary">Submit</button></span>
+              </div>
+
+              <!--Finalise Submission-->
+
+              <div class="form-check">
+                  <label class="form-check-label" style="margin-right: 25px; color: red;" for="final_sub"> Please check this box to confirm submission</label>
+                  <input type="checkbox" class="form-check-input" id="final_sub">
+              </div>
+
+              <!--Modal to confirm submission-->
+
+              <!--<div class="modal fade" id="form_submission" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">-->
+                  <!--<div class="modal-dialog modal-dialog-centered" role="document">-->
+                      <!--<div class="modal-content">-->
+                          <!--<div class="modal-header">-->
+                              <!--<h2 style="color: darkred" class="modal-title" id="exampleModalLongTitle"><b>Confirm Submission</b></h2>-->
+                              <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                                  <!--<span aria-hidden="true">&times;</span>-->
+                              <!--</button>-->
+                          <!--</div>-->
+                          <!--<div class="modal-body">-->
+                              <!--<span style="color: #1565c0">-->
+              <!--Dear Sir/Ma,-->
+
+                                  <!--We appreciate your interest in indicating to participate in the ACE cybersecurity training workshop. Please confirm that the information provided in the form is accurate and authentic before confirming submission-->
+
+                              <!--</p>-->
+                          <!--</div>-->
+                          <!--<div class="modal-footer">-->
+                              <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                              <!--<button type="submit" class="btn btn-primary">Confirm Submission</button>-->
+                          <!--</div>-->
+                      <!--</div>-->
+                  <!--</div>-->
+              <!--</div>-->
+
+
+          </fieldset>
+
+      </form>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <script>
+          $(document).ready(function(){
+              $('#twitter').click(function() {
+                  if ($(this).prop("checked") === true) {
+                      $('#twitter_textfield').css('display', 'block');
+                  }
+                  else if ($(this).prop("checked") === false) {
+                      $('#twitter_textfield').css('display', 'none');
+                  }
+              });
+              $('#facebook'). click(function() {
+                  if ($(this).prop("checked") === true) {
+                      $('#facebook_textfield').css('display', 'block');
+                  }
+                  else if ($(this).prop("checked") === false) {
+                      $('#facebook_textfield').css('display', 'none');
+                  }
+              });
+              $('#instagram'). click(function() {
+                  if ($(this).prop("checked") === true) {
+                      $('#instagram_textfield').css('display', 'block');
+                  }
+                  else if ($(this).prop("checked") === false) {
+                      $('#instagram_textfield').css('display', 'none');
+                  }
+              });
+              $('#final_sub'). click(function() {
+                  if ($(this).prop("checked") === true) {
+                      $('#sub_btn').removeAttr('disabled');
+                  }
+                  else if ($(this).prop("checked") === false) {
+                      $('#sub_btn').attr('disabled', 'disabled');
+                  }
+              });
+
+              //For text count in the text area
+
+              $("#why_applying").on('keyup', function() {
+                  let words = this.value.match(/\S+/g).length;
+
+                  if (words > 50) {
+                      // Split the string on first 50 words and rejoin on spaces
+                      let trimmed = $(this).val().split(/\s+/, 50).join(" ");
+                      // Add a space at the end to make sure more typing creates new words
+                      $(this).val(trimmed + " ");
+                  }
+                  else {
+                      // $('#display_count').text(words);
+                      $('#applying_words_left').text(50-words+' Words Left');
+
+                  }
+              });
+              $("#what_gain").on('keyup', function() {
+                  let words = this.value.match(/\S+/g).length;
+
+                  if (words > 50) {
+                      // Split the string on first 50 words and rejoin on spaces
+                      let trimmed = $(this).val().split(/\s+/, 50).join(" ");
+                      // Add a space at the end to make sure more typing creates new words
+                      $(this).val(trimmed + " ");
+                  }
+                  else {
+                      // $('#display_count').text(words);
+                      $('#gain_words_left').text(50-words+' Words Left');
+
+                  }
+              });
+          });
+
+
+
+      </script>
+   </body>
+</html>
